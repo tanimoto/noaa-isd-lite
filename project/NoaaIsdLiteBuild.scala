@@ -13,7 +13,10 @@ object NoaaIsdLiteBuild extends Build {
       scalaVersion := "2.10.3",
       libraryDependencies ++= Seq(
         "commons-net" % "commons-net" % "3.3",
-        "com.jsuereth" %% "scala-arm" % "1.3"
+        "com.jsuereth" %% "scala-arm" % "1.3",
+
+        // Test
+        "org.scalatest" % "scalatest_2.10" % "2.0.RC1" % "test"
       )
     )
   )
